@@ -1,0 +1,108 @@
+/* google font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* basic html */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: "Poppins", sans-serif;
+  font-size: 100%;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 50px;
+}
+
+/* Basic css */
+h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  list-style: 58px;
+}
+h2 {
+  font-size: 1.875rem;
+  font-weight: 600;
+  list-style: 36px;
+}
+h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  list-style: 30px;
+}
+p {
+  font-size: 1rem;
+  font-weight: 400;
+  list-style: 24px;
+}
+/* common css */
+
+/* media quires */
+@media only screen and (max-width: 1024px) {
+  .container {
+    max-width: 90%;
+  }
+  /* Basic css */
+  h1 {
+    font-size: 2.25rem;
+    font-weight: 600;
+    list-style: 42px;
+  }
+  h2 {
+    font-size: 1.5rem;
+    list-style: 30px;
+  }
+  h3 {
+    font-size: 1.25rem;
+    list-style: 28px;
+  }
+  p {
+    font-size: 0.875rem;
+    list-style: 20px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .container {
+    max-width: 90%;
+    padding: 0 20px;
+  }
+  /* Basic css */
+  h1 {
+    font-size: 1.5rem;
+    list-style: 32px;
+  }
+  h2 {
+    font-size: 1.25rem;
+    font-weight: 500;
+    list-style: 28px;
+  }
+  h3 {
+    font-size: 1.125rem;
+    font-weight: 500;
+    list-style: 24px;
+  }
+}
+@media only screen and (max-width: 426px) {
+  .container {
+    max-width: 100%;
+  }
+  /* Basic css */
+  h1 {
+    font-size: 1.125rem;
+    font-weight: 500;
+    list-style: 24px;
+  }
+  h2,
+  h3 {
+    font-size: 1rem;
+    font-weight: 500;
+    list-style: 22px;
+  }
+  p {
+    font-size: 0.75rem;
+    list-style: 16px;
+  }
+}
