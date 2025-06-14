@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>cart | kushtia, Bangladesh</title>
+    <title>checkout | kushtia, Bangladesh</title>
     <!-- fav icon -->
     <link
       rel="apple-touch-icon"
@@ -26,7 +26,7 @@
 
     <!-- internal css -->
     <link rel="stylesheet" href="../css/header.css" />
-    <link rel="stylesheet" href="../css/cart.css" />
+    <link rel="stylesheet" href="../css/checkout.css" />
     <link rel="stylesheet" href="../css/footer.css" />
   </head>
   <body>
@@ -147,7 +147,7 @@
               alt=""
             />
           </div>
-          <h1>Cart</h1>
+          <h1>Checkout</h1>
           <div class="hero-items">
             <p>Home</p>
             <p>
@@ -161,55 +161,80 @@
                 <path d="M6 15L11 10L6 5L7 3L14 10L7 17L6 15Z" fill="black" />
               </svg>
             </p>
-            <p class="shop">Cart</p>
+            <p class="shop">Checkout</p>
           </div>
         </div>
       </div>
     </main>
 
-    <!-- cart-section -->
-    <section class="cart-section">
+    <!-- checkout-section -->
+    <section class="checkout-section">
       <div class="container">
-        <div class="cart-area">
-          <div class="cart-left">
-            <table>
-              <tr>
-                <th class="product-col">Product</th>
-                <th class="price-col">Price</th>
-                <th>Quantity</th>
-                <th class="Subtotal-col">Subtotal</th>
-              </tr>
-              <tr>
-                <td class="td-col1">
-                  <img
-                    width="110"
-                    height="90"
-                    src="../image/cart/product-1.png"
-                    alt="product-1"
-                  />
-                  <p>Asgaard sofa</p>
-                </td>
-                <td>Rs. 250,000.00</td>
-                <td class="quantity-col"><button>1</button></td>
-                <td>Rs. 250,000.00</td>
-              </tr>
-            </table>
-          </div>
-          <div class="cart-right">
-            <h2>Cart Totals</h2>
-            <table class="table-2">
-              <tr>
-                <th class="table-head">Cart Totals</th>
-                <td class="table-data cart-total">Rs. 250,000.00</td>
-              </tr>
-              <tr>
-                <th class="table-head">Total</th>
-                <td class="table-data total">Rs. 250,000.00</td>
-              </tr>
-            </table>
-            <a href="./checkout.html">Check Out</a>
-            
-          </div>
+        <div class="checkout-area">
+          <h2>Billing details</h2>
+          <form action="#">
+            <div class="from-left">
+              <label for="fname">First Name</label><br />
+              <input type="text" id="fname" name="fname" /><br />
+              <label for="lname">Last Name</label><br />
+              <input type="text" id="lname" name="lname" /><br />
+              <label for="cname">Company Name(Optional)</label><br />
+              <input type="text" id="cname" name="cname" /><br />
+              <label for="country">Country/Region</label><br />
+              <select id="country" name="country">
+                <option>--select one--</option>
+                <option value="Bangladesh">Bangladesh</option>
+                <option value="India">India</option>
+                <option value="Pakistan">Pakistan</option>
+                <option value="China">China</option>
+              </select>
+              <br />
+              <label for="saddress">Street Address</label><br />
+              <input type="text" id="saddress" name="saddress" /><br />
+
+              <label for="tname">Town/City</label><br />
+              <input type="text" id="tname" name="tname" /><br />
+              <label for="zipcode">ZIP Code</label><br />
+              <input type="number" id="zipcode" name="zipcode" /><br />
+              <label for="phone">Phone</label><br />
+              <input type="tel" id="phone" name="phone" /><br />
+              <label for="email">Email</label><br />
+              <input type="email" id="email" name="email" /><br />
+              <textarea
+                id="additional-info"
+                name="additional-info"
+                rows="4"
+                cols="50"
+                placeholder="Additional Information"
+              ></textarea>
+            </div>
+            <div class="form-right">
+              <table>
+                <tr>
+                  <th class="t-left">Product</th>
+                  <th class="t-right">Subtotal</th>
+                </tr>
+                <tr>
+                  <td class="t-left product-name">Asgaard sofa x 1</td>
+                  <td class="t-right">Rs. 250,000.00</td>
+                </tr>
+                <tr>
+                  <td class="t-left">Subtotal</td>
+                  <td class="t-right">Rs. 250,000.00</td>
+                </tr>
+                <tr>
+                  <td class="t-left">Total</td>
+                  <td class="t-right total-price">Rs. 250,000.00</td>
+                </tr>
+              </table>
+              <div class="horizontal-line"></div>
+              <input type="radio" id="pay1" name="pay"/>
+              <label class="pay1" for="pay1">Cash on Delivery</label><br />
+              <input type="radio" id="pay2" name="pay"/>
+              <label class="pay2" for="pay2">Direct Bank Transfer</label><br />
+              <input type="submit" value="Place order" />
+            </div>
+          </form>
         </div>
       </div>
     </section>
