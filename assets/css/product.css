@@ -172,6 +172,7 @@ p {
   background-color: #b88e2f;
 }
 .cart-btn {
+  text-decoration: none;
   padding: 10px 50px;
   border: none;
   margin-right: 10px;
