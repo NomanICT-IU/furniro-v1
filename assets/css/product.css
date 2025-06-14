@@ -557,7 +557,7 @@ p {
     height: 25px;
   }
   .cart-btn {
-    padding: 10px 38px;
+    padding: 10px 35px;
   }
   /* description-section */
   .description-area {
@@ -568,9 +568,6 @@ p {
     gap: 10px;
     align-items: start;
   }
- 
- 
-  
   .description-area .image-gallery { 
     display: flex;
     flex-direction: column;
